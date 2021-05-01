@@ -22,17 +22,17 @@ mensaje= "hola mundo"
 let a = 5;
 let b = 6;
 let suma = a + b;
-console.log("El resultado de la suma es: ",suma);
+//console.log("El resultado de la suma es: ",suma);
 
 b = 7
-console.log(b)
+//console.log(b)
 
 let nombre = "juan";
 let nombre2 = nombre;
 
 nombre2 = "pablo";
-console.log("el nombre uno es:",nombre); 
-console.log("el nombre dos es:",nombre2);
+//console.log("el nombre uno es:",nombre); 
+//console.log("el nombre dos es:",nombre2);
 
 //nombrar variables con camel case
 nombreUno = "Juan";
@@ -61,8 +61,8 @@ const pi = 3.141624;
 const COLOR_ROJO = "#FFFFF";
 pi_dos = pi;
 pi_dos = 7;
-console.log(pi);
-console.log(pi_dos);
+//console.log(pi);
+//console.log(pi_dos);
 
 //const id_account = get_id_account(45);
 
@@ -81,18 +81,18 @@ n = 12.456;
 
 // Infinity: representa el infinito matematico. Es un valor especial que es mayor que cualquier numero;
 
-console.log(1 / 0);
-console.log(Infinity);
+//console.log(1 / 0);
+//console.log(Infinity);
 
 
 //NaN representa un  error de calculo. Es el resultado de una operacion
 // matematica incorrecta o indefinida
 
-console.log("no es un numero" /2);
+//console.log("no es un numero" /2);
 
 //NaN es pegajoso. cualquier operacion sobre Nan devuelve NaN
 
-console.log("no es un numero" /2 + 5);
+//console.log("no es un numero" /2 + 5);
 
 //Tipos de datos BigInt
 
@@ -111,9 +111,9 @@ let nomb = "Juan";
 //console.log('hola', nomb);
 //console.log(`hola`, nomb);
 
-console.log("hola ${nomb}");
-console.log('hola ${nomb}');
-console.log(`hola ${nomb}`);
+//console.log("hola ${nomb}");
+//console.log('hola ${nomb}');
+//console.log(`hola ${nomb}`);
 
 // Tipo booleano
 
@@ -139,20 +139,20 @@ let edad = null;
 //El significado de undefined es valor no asignado.
 
 let edad_dos
-console.log(edad_dos);
+//console.log(edad_dos);
 
 
 // El operador typeof o funcion typeof(x), devuelve el tipo de dato.
 
-console.log(typeof undefined); // undefined
-console.log(typeof 0); //number
-console.log(typeof true);//boolean
-console.log(typeof 10n); //bigint
-console.log(typeof "hola");//string
+//console.log(typeof undefined); // undefined
+//console.log(typeof 0); //number
+//console.log(typeof true);//boolean
+//console.log(typeof 10n); //bigint
+//console.log(typeof "hola");//string
 
-console.log(typeof(alert)); //funtion**
-console.log(null);// object- error de javascript
-console.log(Math); // object
+//console.log(typeof(alert)); //funtion**
+//console.log(null);// object- error de javascript
+//console.log(Math); // object
 
 // Interacciones: alert, prompt, confirm
 
@@ -179,9 +179,105 @@ console.log(Math); // object
 
 //convertir a string
 
-let valor = true;
-console.log(typeof valor);
+//let valor = true;
+//console.log(typeof valor);
 
-valor = string(valor);
-console.log(valor);
-console.log(typeof valor);
+//valor = string(valor); // "true"
+//valor = string(false); // "false"
+//valor = string(null); // "null"
+//valor = string(undefined); // undefined
+//console.log(valor);
+//console.log(typeof valor);
+
+// convertir a Numero
+
+//conversiones numericas ocurren automaticamente en funciones matematicas y expresiones
+
+// alert('6 / 2'); //3
+// alert(1 + '2'); //'12'
+//alert('1' + 2); //'12'
+
+//let cadena = "123"
+//let num_cad = number(cadena); //123
+
+//console.log(number('hola')); //NaN
+
+/*
+undefinend -> NaN
+null -> 0
+true -> 1
+false ->0
+string '' ->0
+string 'hola' -> NaN
+*/
+
+// convertir a booleano
+
+//console.log(Boolean("hola"))
+
+/*
+undefined -> false
+null -> false
+string '' -> false
+NaN -> false
+0 -> false
+'0' -> true
+*/
+
+//console.log(Boolean(string(0)))
+//console.log(Boolean(0))
+
+//OPERADORES BASICOS
+
+// Operadores unarios y binarios
+
+let  res;
+a = 5;
+b = 2;
+
+res = a + b;
+res = a - b;
+res = a * b;
+res = a / b;
+res = a % b;// mod
+res = a ** b; // potencia
+
+//alert('1' + 2);//12
+//alert(1 + '2');//12
+
+//alert(2 + 2 + '1')//41
+//alert('1' + 2 + 2)//122
+
+//alert(2 - '1'); //1
+//alert('6' / '2'); //3
+//alert('6' / '2a');//
+
+//Operaciones unarias +
+
+a = 1;
+console.log(+a);
+
+a = -1;
+console.log(+a);
+
+console.log(+true);
+console.log(+false);
+console.log(+NaN);
+console.log(+undefined);
+console.log(+null);
+console.log(+"");
+
+a = "2";
+b = "3";
+
+console.log(+a + +b);
+console.log(Number(a)+Number(b))
+
+// operaciones unarias -
+
+a = 1;
+console.log(-a);
+
+a = 1;
+console.log(-true);
+console.log(-false);
