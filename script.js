@@ -121,7 +121,6 @@ console.log(`hola ${nomb}`);
 
 let verdadero = true;
 let falso = false;
-
 let mayor = 4 > 1; //True
 
 // Tipo de dato null
@@ -141,3 +140,48 @@ let edad = null;
 
 let edad_dos
 console.log(edad_dos);
+
+
+// El operador typeof o funcion typeof(x), devuelve el tipo de dato.
+
+console.log(typeof undefined); // undefined
+console.log(typeof 0); //number
+console.log(typeof true);//boolean
+console.log(typeof 10n); //bigint
+console.log(typeof "hola");//string
+
+console.log(typeof(alert)); //funtion**
+console.log(null);// object- error de javascript
+console.log(Math); // object
+
+// Interacciones: alert, prompt, confirm
+
+//alert
+
+//alert('hola mundo');
+
+// prompt
+
+//let nombre_capturado = prompt('digite el nombre', 'hola');
+//alert(nombre_capturado);
+
+//prompt('digite el nombre')
+//prompt('digite el nombre', '') //solo para IE
+
+// confirm
+
+//let eshelado = confirm('¿Te gusta el helado?');
+//console.log(eshelado); // true si presionan OK y false si precionan cancelar
+
+// CONVERSION DE TIPOS 
+
+// Existen dos tipos de conversiones explicitas e implicitas
+
+//convertir a string
+
+let valor = true;
+console.log(typeof valor);
+
+valor = string(valor);
+console.log(valor);
+console.log(typeof valor);
