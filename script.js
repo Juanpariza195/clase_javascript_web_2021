@@ -63,3 +63,81 @@ pi_dos = pi;
 pi_dos = 7;
 console.log(pi);
 console.log(pi_dos);
+
+//const id_account = get_id_account(45);
+
+// tipos de datos
+
+//dinamicamente tipado
+
+//let mensaje = "hello";
+//mensaje = 1234
+
+// Tipo de datos Numero
+let n = 123;
+n = 12.456;
+
+// Valores numericos especiales Infinity, - Infinity y NaN
+
+// Infinity: representa el infinito matematico. Es un valor especial que es mayor que cualquier numero;
+
+console.log(1 / 0);
+console.log(Infinity);
+
+
+//NaN representa un  error de calculo. Es el resultado de una operacion
+// matematica incorrecta o indefinida
+
+console.log("no es un numero" /2);
+
+//NaN es pegajoso. cualquier operacion sobre Nan devuelve NaN
+
+console.log("no es un numero" /2 + 5);
+
+//Tipos de datos BigInt
+
+
+//Valores enteros mayores que (2^53-1) o menor que -(2^53-1) 9.007.199.254.740.991
+
+//let numero_grande = 12345666895421115674444444489;
+//console.log(numero_grande);
+
+// Tipo String
+let texto = "hola";
+let texto_dos = 'hola';
+let texto_tres = ``; //backticks funcionalidad extendida
+let nomb = "Juan";
+//console.log("hola", nomb);
+//console.log('hola', nomb);
+//console.log(`hola`, nomb);
+
+console.log("hola ${nomb}");
+console.log('hola ${nomb}');
+console.log(`hola ${nomb}`);
+
+// Tipo booleano
+
+// true y false
+
+let verdadero = true;
+let falso = false;
+
+let mayor = 4 > 1; //True
+
+// Tipo de dato null
+
+// Valor especial que no pertenece a ningun tipo de dato anterior.
+// Forma un tipo propio separado que contiene solo el valor null.
+
+let edad = null;
+
+// en javascript null No significa un objeto no existente
+// Es solo un valor especial que representa nada, vacio o valor desconocido.
+
+// valor undefined
+
+// valor especial que no pertenece a ningun tipo de dato anterior.
+//El significado de undefined es valor no asignado.
+
+let edad_dos
+console.log(edad_dos);
